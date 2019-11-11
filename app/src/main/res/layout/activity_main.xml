@@ -15,49 +15,73 @@
         tools:layout_editor_absoluteY="1dp">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickMe"
-            android:text="ADD FRACTION" />
+            android:text="Save This Employee" />
 
         <TextView
-            android:id="@+id/Answer"
+            android:id="@+id/employ_info"
             android:layout_width="wrap_content"
             android:layout_height="33dp"
             android:layout_gravity="bottom|center"
             android:gravity="center"
-            android:text="Answer" />
+            android:text="This employees information:" />
 
         <EditText
-            android:id="@+id/num1"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="enter num 1 "
+            android:hint="First and Last name"
             android:inputType="" />
 
         <EditText
-            android:id="@+id/denom1"
+            android:id="@+id/employ_height"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter denom 1"
+            android:hint="Height"
             android:inputType="" />
         <EditText
-            android:id="@+id/num2"
+            android:id="@+id/employ_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter num 2"
+            android:hint="Weight"
             android:inputType="" />
         <EditText
-            android:id="@+id/denom2"
+            android:id="@+id/employ_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter denom 2"
+            android:hint="Age"
             android:inputType="" />
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/heighttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/weighttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/agetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

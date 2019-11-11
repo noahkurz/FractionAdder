@@ -5,11 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
-
-    private Fraction answer, answer2, finalAnswer;
+    public String age, weight, height, name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,18 +23,21 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        EditText num1 = findViewById(R.id.num1);
-        EditText num2 = findViewById(R.id.num2);
-        EditText denom1 = findViewById(R.id.denom1);
-        EditText denom2 = findViewById(R.id.denom2);
-        answer = new Fraction(Integer.parseInt(num1.getText().toString()), Integer.parseInt(denom1.getText().toString()));
-        answer2 = new Fraction(Integer.parseInt(num2.getText().toString()), Integer.parseInt(denom2.getText().toString()));
-        finalAnswer = answer.add(answer2);
-        TextView answerbox = findViewById(R.id.Answer);
-        answerbox.setText(finalAnswer.toString());
+        EditText name = findViewById(R.id.name);
+        EditText age = findViewById(R.id.employ_age);
+        EditText height = findViewById(R.id.employ_height);
+        EditText weight = findViewById(R.id.employ_weight);
 
+        TextView Agetxt = findViewById(R.id.agetxt);
+        //employ_info.setText("" + name +  age +  height+  weight);
+        Agetxt.setText(age.getText());
 
-
+        TextView Nametxt = findViewById(R.id.nametxt);
+        TextView Weighttxt = findViewById(R.id.weighttxt);
+        TextView Heighttxt = findViewById(R.id.heighttxt);
+        Nametxt.setText(name.getText());
+        Weighttxt.setText(weight.getText());
+        Heighttxt.setText(height.getText());
 
     }
 
